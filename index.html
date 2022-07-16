@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="index.js">
   <link rel="stylesheet" href="contact.html">
   <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
 
@@ -32,7 +33,7 @@
   </div> -->
   <!-- <div class="content"> -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" id="custom-nav">
-    <img class="logo hv" src="hf logo(1).png" alt="">
+    <img class="logo hv" data-aos="zoom-in-right" data-aos-delay="250" src="hf logo(1).png" alt="">
     <a class="navbar-brand thisweek" href="#">HashFood</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,15 +66,15 @@
             <a class="dropdown-item" href="#">Write for us</a>
           </div>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" data-toggle="popover"  data-content="Contact us">
           <a class="nav-link thisweek" href="/contact.html">Contact Us</a>
         </li>
 
 
       </ul>
       <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" >
+        <button class="btn btn-outline-light my-2 my-sm-0" type="submit" data-toggle="popover"  data-content="Click for search">Search</button>
       </form>
       <div class="mx-2">
         <button class="btn btn-danger hv" data-toggle="modal" data-target="#loginModal">Login</button>
@@ -161,7 +162,7 @@
   </div>
 
 
-  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel" data-aos="zoom-in-down" data-aos-delay="450">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -225,7 +226,7 @@
 
   <div class="container my-4">
     <div class="row mb-2 ">
-      <div class="card col-md-6">
+      <div class="card col-md-6" data-aos="zoom-out-right" data-aos-delay="150">
         <div
           class=" card row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-lg h-md-250 position-relative thisweek">
           <div class="col p-4 d-flex flex-column position-static ">
@@ -241,7 +242,7 @@
           </div>
         </div>
       </div>
-      <div class=" card col-md-6 ">
+      <div class=" card col-md-6 " data-aos="zoom-out-left" data-aos-delay="150">
         <div
           class=" card row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-lg h-md-250 position-relative thisweek">
           <div class="col-auto d-none d-lg-block">
@@ -259,8 +260,8 @@
         </div>
       </div>
     </div>
-    <div class="row mb-2">
-      <div class=" card col-md-6 ">
+    <div class="row mb-2"  >
+      <div class=" card col-md-6 " data-aos="zoom-out-right" data-aos-delay="150"  >
         <div
           class="card row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-lg h-md-250 position-relative thisweek">
           <div class="col-auto d-none d-lg-block">
@@ -277,7 +278,7 @@
 
         </div>
       </div>
-      <div class="card col-md-6 ">
+      <div class="card col-md-6 " data-aos="zoom-out-left" data-aos-delay="150">
         <div
           class="card row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-lg h-md-250 position-relative thisweek">
           <div class="col p-4 d-flex flex-column position-static">
@@ -296,7 +297,7 @@
       </div>
     </div>
     <div class="row mb-2">
-      <div class="card col-md-6">
+      <div class="card col-md-6" data-aos="zoom-out-right" data-aos-delay="150">
         <div
           class="card row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-lg h-md-250 position-relative thisweek">
           <div class="col p-4 d-flex flex-column position-static">
@@ -312,7 +313,7 @@
           </div>
         </div>
       </div>
-      <div class="card col-md-6">
+      <div class="card col-md-6" data-aos="zoom-out-left" data-aos-delay="150">
         <div
           class="card row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-lg h-md-250 position-relative thisweek">
           <div class="col p-4 d-flex flex-column position-static">
@@ -332,7 +333,7 @@
     </div>
   </div>
   <hr>
-  <div class="embed-responsive embed-responsive-21by9">
+  <div class="embed-responsive embed-responsive-21by9" data-aos="zoom-in-down" data-aos-delay="450">
     <video autoplay loop muted> #control
       <source src="pexels-vanessa-loring-5866268.mp4" type="video/mp4">
     </video>
@@ -344,26 +345,26 @@
 
   <hr>
 
-  <footer class="bg-secondary text-white ">
+  <footer class="bg-secondary text-white "  >
     <!-- Grid container -->
     <div class="container p-4 ">
       <!--Grid row-->
       <div class="row">
         <!--Grid column-->
-        <div class="col-lg-6 col-md-12 mb-4 mb-md-0 text-center">
-          <h5 class="text-uppercase text-warning font-weight-bold">Website Creater :</h5>
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0 text-center" data-aos="zoom-in-up" data-aos-delay="250">
+          <h5 class="text-uppercase text-warning font-weight-bold">Website Creator :</h5>
 
           <img src="hf logo(1).png" class="logo hv" alt="">
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-            molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
-            aliquam voluptatem veniam, est atque cumque eum delectus sint!
+            <h4 class="text-danger font-weight-bold">HashFood</h4>
+            <b class="" style="color: red;">Jatin Bansal</b> is the creator and designer of this website . This is a Food Blogging Website . Our platform provides you Best and Award winning blogs also We gave free access to read and write your own blogs to all.
+            
           </p>
         </div>
         <!--Grid column-->
 
         <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0"data-aos="zoom-in-left" data-aos-delay="450">
           <h5 class="text-uppercase text-warning font-weight-bold">Follow Us on</h5>
 
           <ul class="list-unstyled mb-0">
@@ -384,7 +385,7 @@
         <!--Grid column-->
 
         <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0" data-aos="zoom-in-right" data-aos-delay="450">
           <h5 class="text-uppercase mb-0 text-warning font-weight-bold">Helpful Links</h5>
 
           <ul class="list-unstyled">
@@ -407,7 +408,7 @@
       <!--Grid row-->
     </div>
     <!-- Grid container -->
-    <div class="wrapper ">
+    <div class="wrapper " >
       <div class="button">
         <a href="https://www.facebook.com/profile.php?id=100056970570074"  target="_blank">
           <div class="icon">
@@ -450,7 +451,7 @@
     </div>
 
     <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    <div class="text-center p-3"  style="background-color: rgba(0, 0, 0, 0.2);" >
       <p>© 2021-2022 HashFood, Inc. · <a class="text-warning thisweek" href="#">Privacy</a> · <a class="text-warning thisweek" href="#">Terms</a></p>
       <marquee class="text-warning" Scrollamount=9>* This is not a official Website . I created this as my summer training Project. <b>"HashFood" </b> a random name that i gave to this website. THANKYOU</marquee>
     </div>
@@ -500,7 +501,7 @@
   <i class="fas fa-arrow-up"></i>
 </button> -->
 
-  <button type="button" class="btn  btn-floating btn-md" id="btn-back-to-top">
+  <button type="button" class="btn  btn-floating btn-md" id="btn-back-to-top" data-toggle="popover"  data-content="Back to Top">
     <img class="hv" src="go to top.png" width="50px" height="50px" alt="">
   </button>
 
@@ -530,9 +531,19 @@
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
+
+    $(document).ready(function(){
+    $('[data-toggle="popover"]').popover({
+        placement : 'top',
+        trigger: 'hover'
+    });
+});
   </script>
 
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 </body>
 

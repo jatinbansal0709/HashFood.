@@ -93,7 +93,9 @@
 
 
 
-
+html{
+  scroll-behavior: smooth;
+}
 
 
 
